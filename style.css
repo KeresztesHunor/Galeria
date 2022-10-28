@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-left: 25px;
+}
+
+main {
+  padding: 10px;
+  border: 1px black solid;
+}
+
+header {
+  padding: 10px;
+  margin: 5px 0px 5px 0px;
+  border: 1px black solid;
+}
+
+nav {
+  margin: 5px 0px 5px 0px;
+  border: 1px black solid;
+}
+
+nav ul {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  padding-left: 0;
+  grid-template-columns: 1fr auto auto;
+  background-color: hsl(0 0% 75%);
+}
+
+nav li {
+  list-style: none;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: red;
+}
+
+article {
+  border: 1px black solid;
+}
+
+.nagykep {
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  border: 1px black solid;
+}
+
+.nagykep img {
+  width: 100%;
+}
+
+.kiskep {
+  padding: 5px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  border: 1px black solid;
+}
+
+.kiskep img {
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+  display: block;
+  border: 1px black solid;
+}
+
+footer {
+  padding: 5px;
+  margin: 5px 0px 5px 0px;
+  border: 1px black solid;
+}
+
+@media only screen and (max-width: 800px) {
+  .kiskep {
+    padding: 5px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    border: 1px black solid;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .kiskep {
+    padding: 5px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    border: 1px black solid;
+  }
+}
